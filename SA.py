@@ -8,8 +8,6 @@ IN_AD_MODE = 1
 RI_AD_MODE = 2
 PC_AD_MODE = 3
 
-UNKNOWN_SYM = False
-
 def REG(x):
     if x == 'R0':
         return R0 
@@ -153,7 +151,7 @@ builtin_syms = {'MOV' : 1,
                 'OUT' : 2, 
                 'LDI' : 2}
 
-dispatch = {'MOV' : 1,
+dispatch = {'MOV' : MOV,
             'ADD' : ADD,
             'SUB' : SUB,
             'AND' : AND,

@@ -1,0 +1,9 @@
+[Unit]
+Description=SAssembler
+
+[Service]
+ExecStart=/usr/bin/python /root/SAssembler/web.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
